@@ -99,10 +99,45 @@ footer {
 	padding: 2% 3%;
 }
 
-/*
-@media screen and (max-width: 768px) {
-	.wrapper {
-	display: flex;
-	}
+.mobile-only{
+	display:none;
 }
-*/
+
+.desktop-only{
+	display:flex;
+}
+
+@media screen and (max-width: 768px) {
+
+	.blurb {
+		background: rgba(255,255,255,.8);
+		box-shadow: 0 0 5px rgba(0,0,0,.75);
+		float: right;
+		margin: 0 auto;
+		padding: 4%;
+		width: 50%;
+	}
+
+	.desktop-only{
+		display:none;
+	}
+
+	.mobile-only{
+		display:flex;
+	}
+
+.touts {
+		display:flex;
+		flex-direction: column;
+	}
+
+	.tout {
+		box-shadow: none;
+		width: 90%;
+	}
+
+	.tout .button {
+		align-items: center;
+	}
+
+}
